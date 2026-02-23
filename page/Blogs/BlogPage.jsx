@@ -1,15 +1,17 @@
-"use client"
+
 import React from 'react'
 import BlogBanner from './BlogBanner'
-import FeaturedPost from './FeaturedPost'
+
+import BlogSection1 from './BlogSection1'
 
 const BlogPage = () => {
   return (
     <div>
         <BlogBanner/>
-        <FeaturedPost/>
+        <BlogSection1/>
+    
     </div>
   )
 }
 
-export default BlogPage
+export default BlogPage;
