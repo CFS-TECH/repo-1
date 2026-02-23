@@ -7,4 +7,9 @@ export const dateFormate = (date) => {
   });
 };
 
-console.log(dateFormate("2026-02-03T02:51:06.067+00:00"));
+// console.log(dateFormate("2026-02-03T02:51:06.067+00:00"));
+ export  const encodeURIComponent = (slug)=>{
+    const newSlug = [...new slug.split()]
+    console.log(newSlug);
+    
+  }

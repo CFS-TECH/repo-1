@@ -13,7 +13,7 @@ const InternshipSection = () => {
     if (activeSector === "") return true;
     return item.sector === activeSector;
   });
-console.log(activeSector);
+
 
   return (
     <div className="   p-8 lg:p-16 w-full  overflow-hidden">
