@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import React from "react";
-import { FaPhone, FaRegCopyright } from "react-icons/fa6";
+import { FaLocationArrow, FaPhone, FaRegCopyright } from "react-icons/fa6";
 import {
   IoLogoFacebook,
   IoLogoInstagram,
@@ -105,14 +105,14 @@ export const Newsletter = () => {
     <div className="w-full flex flex-col gap-6">
       <div className="bg-white/10 backdrop-blur-md rounded-2xl p-5 border border-white/20">
         <h2 className="text-lg font-bold text-white mb-3">Join Our Newsletter</h2>
-        <div className="flex w-full h-[45px] overflow-hidden rounded-lg bg-white shadow-inner mb-3">
+        <div className="flex w-full h-[30px] overflow-hidden rounded-lg bg-white shadow-inner mb-3">
           <input
             type="email"
             className="bg-transparent w-full px-3 outline-none text-black text-sm"
             placeholder="Your email address"
           />
-          <button className="bg-orange-500 hover:bg-orange-600 transition-colors px-4 text-white text-sm font-bold">
-            Subscribe
+          <button className="bg-orange-500 hover:bg-orange-600 transition-colors px-2 text-white text-sm font-bold">
+            <FaLocationArrow/>
           </button>
         </div>
         <p className="text-[10px] text-gray-300 leading-tight">

@@ -370,13 +370,15 @@ export const JobsCard = ({
   );
 };
 
-export const JobCard = () => {
+export const JobCard = ({
+  title="Software Development"
+}) => {
   return (
     <article className="group flex w-full flex-col items-start space-y-3 rounded-2xl bg-white p-5 shadow-sm border border-gray-100 transition-all duration-200 hover:shadow-md hover:border-orange-200">
       {/* Header / Title */}
       <header className="flex flex-col w-full">
         <Link
-          href="https://crossoverfintech.com/career/software-development"
+          href={`/careers/${title}`}
           className="w-fit"
         >
           <h2 className="text-xl font-semibold text-gray-900 transition-colors group-hover:text-orange-500">
@@ -384,7 +386,7 @@ export const JobCard = () => {
           </h2>
         </Link>
         <span className="text-xs text-gray-400 mt-0.5 truncate">
-          https://crossoverfintech.com/career/software-development
+          https://crossoverfintech.com/careers/software-development
         </span>
       </header>
 
