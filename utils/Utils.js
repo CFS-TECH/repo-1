@@ -218,7 +218,7 @@ export const servicesData = [
           "Secure, scalable MERN stack platforms tailored for financial services.",
       },
       {
-        name: "Custom Software Development",
+        name: "Software Development",
         link: "/services/application-development",
         icon: <Smartphone size={20} />,
         description:
