@@ -4,6 +4,7 @@ import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 import ContactPopup from "@/components/ContactUs/ContactPopup";
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import RedirectWhatsApp from "@/components/Support/RedirectWhatsApp";
 
 
 const poppins = Poppins({
@@ -101,6 +102,7 @@ export default function RootLayout({ children }) {
         {children}
         <Footer />
         <SpeedInsights/>
+        <RedirectWhatsApp/>
       </body>
     </html>
   );

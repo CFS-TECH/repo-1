@@ -19,7 +19,13 @@ import {
 } from "react-icons/fa6";
 
 import { IoMdArrowDropright, IoMdCalendar } from "react-icons/io";
-import { MdLocationOn, MdMoney, MdOutlinePayments, MdWorkOutline } from "react-icons/md";
+import {
+  MdLocationOn,
+  MdMoney,
+  MdOutlinePayments,
+  MdWorkOutline,
+} from "react-icons/md";
+import { Briefcase, Clock, Laptop, TrendingUp } from "lucide-react";
 export const ServiceCard = ({
   servicesName,
   category,
@@ -76,12 +82,12 @@ export const ServiceCard = ({
 };
 
 export const LatestBlogCard = ({
-  title,
-  image,
-  author,
-  createAt,
-  slug,
-  category,
+  title = "Untitled",
+  image = "/Team.png",
+  author = "by admin",
+  createAt = "2026-02-23T02:24:47.467+00:00",
+  slug = "/",
+  category = "Web",
 }) => {
   // image:
   //     "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&q=80&w=1000",
@@ -113,7 +119,7 @@ export const LatestBlogCard = ({
         <section className="flex items-center justify-between w-full pt-3 pb-2">
           <h3 className="text-md font-medium capitalize text-[#102a43e2] flex items-center gap-2">
             <FaUser className="w-5 h-5 p-0.5 border rounded-full" />{" "}
-            {author.name}
+            {author?.name || "By Admin"}
           </h3>
           <p className="text-md font-medium capitalize text-[#102a43e2] flex items-center gap-2">
             <FaCalendar /> {dateFormate(createAt)}
@@ -137,7 +143,6 @@ export const LatestBlogCard = ({
     </section>
   );
 };
-
 
 export const CareerCard = ({
   title,
@@ -227,12 +232,12 @@ export const CareerCard = ({
           <span className="text-xs font-bold uppercase">Internship</span>
         </div>
 
-        <Link 
-          href={`/career/${title.replace(/\s+/g, '-').toLowerCase()}`} 
+        <Link
+          href={`/careers/${title.replace(/\s+/g, "-").toLowerCase()}`}
           className="flex items-center gap-2 text-sm font-bold text-gray-400 group-hover:text-[#fd741e] transition-all duration-300"
         >
-          View Details 
-          <FaArrowRightLong className="group-hover:translate-x-1 transition-transform"/> 
+          View Details
+          <FaArrowRightLong className="group-hover:translate-x-1 transition-transform" />
         </Link>
       </div>
     </motion.div>
@@ -268,12 +273,18 @@ export const JobsCard = ({
         {/* TOP: Status, Sector & Work Type */}
         <div className="flex justify-between items-start mb-4 gap-2">
           <div className="flex flex-col gap-2">
-            <div className={`flex items-center gap-1.5 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider border ${
-              hiringStatus === "Actively hiring" 
-              ? "bg-emerald-50 text-emerald-600 border-emerald-100" 
-              : "bg-gray-50 text-gray-500 border-gray-100"
-            }`}>
-              <FaArrowTrendUp className={hiringStatus === "Actively hiring" ? "animate-pulse" : ""} />
+            <div
+              className={`flex items-center gap-1.5 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider border ${
+                hiringStatus === "Actively hiring"
+                  ? "bg-emerald-50 text-emerald-600 border-emerald-100"
+                  : "bg-gray-50 text-gray-500 border-gray-100"
+              }`}
+            >
+              <FaArrowTrendUp
+                className={
+                  hiringStatus === "Actively hiring" ? "animate-pulse" : ""
+                }
+              />
               {hiringStatus}
             </div>
             {/* Sector Badge */}
@@ -281,7 +292,9 @@ export const JobsCard = ({
               {sector}
             </div>
           </div>
-          <span className="text-gray-400 text-[11px] font-bold uppercase tracking-tighter">{workType}</span>
+          <span className="text-gray-400 text-[11px] font-bold uppercase tracking-tighter">
+            {workType}
+          </span>
         </div>
 
         {/* TITLE & COMPANY */}
@@ -297,15 +310,21 @@ export const JobsCard = ({
           <div className="flex items-center gap-2 p-2.5 bg-gray-50 rounded-xl border border-gray-100 group-hover:bg-white group-hover:border-orange-100 transition-all">
             <MdWorkOutline className="text-orange-500 text-lg" />
             <div className="flex flex-col">
-               <span className="text-[10px] text-gray-400 font-bold uppercase">Experience</span>
-               <span className="text-xs font-bold text-gray-700">{experience}</span>
+              <span className="text-[10px] text-gray-400 font-bold uppercase">
+                Experience
+              </span>
+              <span className="text-xs font-bold text-gray-700">
+                {experience}
+              </span>
             </div>
           </div>
           <div className="flex items-center gap-2 p-2.5 bg-gray-50 rounded-xl border border-gray-100 group-hover:bg-white group-hover:border-orange-100 transition-all">
             <HiOutlineBadgeCheck className="text-orange-500 text-lg" />
             <div className="flex flex-col">
-               <span className="text-[10px] text-gray-400 font-bold uppercase">Level</span>
-               <span className="text-xs font-bold text-gray-700">{level}</span>
+              <span className="text-[10px] text-gray-400 font-bold uppercase">
+                Level
+              </span>
+              <span className="text-xs font-bold text-gray-700">{level}</span>
             </div>
           </div>
         </div>
@@ -318,13 +337,13 @@ export const JobsCard = ({
             </div>
             <span className="text-sm font-medium">{location}</span>
           </div>
-          
+
           <div className="flex items-center gap-3 text-gray-600 group-hover:translate-x-1 transition-transform">
             <div className="p-2 bg-gray-100 rounded-lg group-hover:bg-orange-100 group-hover:text-orange-600">
               <MdOutlinePayments className="text-lg" />
             </div>
             <div className="flex flex-col">
-               <span className="text-sm font-bold text-[#102a42]">{salary}</span>
+              <span className="text-sm font-bold text-[#102a42]">{salary}</span>
             </div>
           </div>
         </div>
@@ -333,12 +352,14 @@ export const JobsCard = ({
       {/* BOTTOM: Action Area */}
       <div className="pt-5 border-t border-dashed border-gray-200 flex items-center justify-between">
         <div className="flex items-center gap-2">
-           <div className="w-2 h-2 rounded-full bg-orange-500 shadow-[0_0_8px_#fd741e]" />
-           <span className="text-[11px] font-extrabold text-[#102a42] uppercase tracking-widest">{mode}</span>
+          <div className="w-2 h-2 rounded-full bg-orange-500 shadow-[0_0_8px_#fd741e]" />
+          <span className="text-[11px] font-extrabold text-[#102a42] uppercase tracking-widest">
+            {mode}
+          </span>
         </div>
-        
-        <Link 
-          href={`/career/job/${title.replace(/\s+/g, '-').toLowerCase()}`} 
+
+        <Link
+          href={`/careers/${title.replace(/\s+/g, "-").toLowerCase()}`}
           className="flex items-center gap-2 text-sm font-bold text-[#102a42] hover:text-[#fd741e] transition-all group/link"
         >
           View Details
@@ -346,5 +367,57 @@ export const JobsCard = ({
         </Link>
       </div>
     </motion.div>
+  );
+};
+
+export const JobCard = ({
+  title="Software Development"
+}) => {
+  return (
+    <article className="group flex w-full flex-col items-start space-y-3 rounded-2xl bg-white p-5 shadow-sm border border-gray-100 transition-all duration-200 hover:shadow-md hover:border-orange-200">
+      {/* Header / Title */}
+      <header className="flex flex-col w-full">
+        <Link
+          href={`/careers/${title}`}
+          className="w-fit"
+        >
+          <h2 className="text-xl font-semibold text-gray-900 transition-colors group-hover:text-orange-500">
+            Software Development
+          </h2>
+        </Link>
+        <span className="text-xs text-gray-400 mt-0.5 truncate">
+          https://crossoverfintech.com/careers/software-development
+        </span>
+      </header>
+
+      {/* Description */}
+      <p className="text-sm text-gray-600 line-clamp-2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, quod
+        explicabo consequuntur nemo ducimus odit? Repellat neque error libero
+        pariatur inventore accusamus eveniet eligendi dicta enim quos,
+        praesentium mollitia quia!
+      </p>
+
+      {/* Badges / Tags */}
+      {/* Changed to flex-wrap and gap-3 so it doesn't break on mobile */}
+      <div className="w-full flex flex-wrap items-center gap-3 pt-2">
+        <span className="flex items-center gap-1.5 bg-gray-50 border border-gray-100 px-2.5 py-1 rounded-md text-[13px] text-slate-600">
+          <Clock size={14} className="text-gray-400" />
+          Full Time
+        </span>
+        <span className="flex items-center gap-1.5 bg-gray-50 border border-gray-100 px-2.5 py-1 rounded-md text-[13px] text-slate-600">
+          <TrendingUp size={14} className="text-gray-400" />
+          Mid Level
+        </span>
+        <span className="flex items-center gap-1.5 bg-gray-50 border border-gray-100 px-2.5 py-1 rounded-md text-[13px] text-slate-600">
+          <Laptop size={14} className="text-gray-400" />
+          Remote
+        </span>
+        <span className="flex items-center gap-1.5 bg-gray-50 border border-gray-100 px-2.5 py-1 rounded-md text-[13px] text-slate-600">
+          <Briefcase size={14} className="text-gray-400" />
+          Internship
+        </span>
+      </div>
+    </article>
   );
 };
