@@ -17,6 +17,7 @@ import {
 } from "react-icons/fa6";
 import { FaCogs, FaShieldAlt } from "react-icons/fa";
 import AppBanner from "./AppBanner";
+import MobileAppDevelopment from "./MobileAppDevelopment";
 
 const SoftwareServices = () => {
   // --- ANIMATION VARIANTS (For Framer Motion) ---
@@ -140,7 +141,7 @@ const SoftwareServices = () => {
       <AppBanner />
 
       {/* ================= 2. MOBILE APP DEVELOPMENT ================= */}
-   
+      <MobileAppDevelopment />
 
       {/* ================= 3. DESKTOP APP DEVELOPMENT (Dark Premium Mode) ================= */}
       <section className="py-32 relative bg-[#102a42] overflow-hidden">
