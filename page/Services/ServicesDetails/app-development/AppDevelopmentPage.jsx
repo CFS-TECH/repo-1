@@ -206,7 +206,6 @@ const SoftwareServices = () => {
             variants={fadeInUp}
             className="mb-16"
           >
-            
             <h3 className="text-4xl md:text-5xl font-black text-[#102a42] mb-4">
               Mobile Application Development
             </h3>
@@ -255,7 +254,6 @@ const SoftwareServices = () => {
             variants={fadeInUp}
             className="mb-16 text-center"
           >
-      
             <h3 className="text-4xl md:text-5xl font-black text-white mb-4">
               Desktop Application Development
             </h3>
@@ -305,7 +303,6 @@ const SoftwareServices = () => {
               variants={slideInLeft}
               className="lg:w-1/3"
             >
-              
               <h3 className="text-4xl md:text-5xl font-black text-[#102a42] mb-6">
                 Web-Based Software
               </h3>
