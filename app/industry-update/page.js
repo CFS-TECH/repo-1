@@ -1,10 +1,10 @@
-import BlogPage from '@/page/Blogs/BlogPage'
+import IndustryUpdate from '@/page/IndustryUpdate/IndustryUpdate'
 import React from 'react'
 
 const page = () => {
   return (
     <div>
-        <BlogPage/>
+        <IndustryUpdate/>
     </div>
   )
 }

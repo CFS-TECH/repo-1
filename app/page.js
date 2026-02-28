@@ -1,12 +1,12 @@
-import Banner, { BannerFinTech } from "@/components/HomeSection/Banner";
-import Trust from "@/components/HomeSection/Trust";
+
 import HomePage from "@/page/HomePage/HomePage";
+import { metadata } from "./layout";
 
-
+ 
 export default function Home() {
   return (
-   <div>
+   <main>
    <HomePage/>
-   </div>
+   </main>
   );
 }

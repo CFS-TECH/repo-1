@@ -208,7 +208,7 @@ export const servicesData = [
       "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1000&auto=format&fit=crop",
     title: "Crossover Fintech Support: Architecting Digital Ecosystems",
     description:
-      "We engineer high-performance MERN stack solutions and financial technology architectures, integrated with predictive AI.",
+      "As a growth-oriented digital partner, we operate as a Website Development Company and Custom Software Development Company, delivering scalable and modern technology solutions.",
     ServicesName: [
       {
         name: "Web Development",
@@ -218,7 +218,7 @@ export const servicesData = [
           "Secure, scalable MERN stack platforms tailored for financial services.",
       },
       {
-        name: "Application Development",
+        name: "Software Development",
         link: "/services/application-development",
         icon: <Smartphone size={20} />,
         description:
@@ -251,9 +251,9 @@ export const servicesData = [
     mainServiceName: "Financial Solution",
     image:
       "https://www.monaco.edu/wp-content/uploads/sites/4/2023/09/bannerfinanceexecutiveprograms.jpg",
-    title: "Empowering Growth with Flexible Capital Solutions",
+    title: "Financial Solutions",
     description:
-      "Providing comprehensive financial assistance through diverse loan portfolios designed for individuals and growing enterprises.",
+      "We provide professional financial coordination services with a focus on structured funding assistance",
     ServicesName: [
       {
         name: "Business Loan",
@@ -276,13 +276,7 @@ export const servicesData = [
         description:
           "Tailored EMI options to help you drive home your dream vehicle with ease.",
       },
-      {
-        name: "Education Loan",
-        link: "/services/education-loan",
-        icon: <GraduationCap size={20} />,
-        description:
-          "Investing in the future by funding quality education and professional courses.",
-      },
+  
       {
         name: "Property Loan",
         link: "/services/property-loan",
@@ -293,67 +287,51 @@ export const servicesData = [
     ],
   },
   {
-    mainServiceName: "Business",
+    mainServiceName: "Business Support Services",
     image:
       "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1000&auto=format&fit=crop",
-    title: "Strategic Innovation & Intelligent Automation",
+    title: "Business Support Services",
     description:
-      "Transforming traditional workflows into intelligent systems through AI integration and high-level corporate strategy.",
+      "As a professional BPO Service Provider, we deliver structured Business Support Services designed to enhance workforce management and customer operations.",
     ServicesName: [
       {
-        name: "Process Automation",
-        link: "/services/automation",
+        name: "Bulk Hiring Services",
+        link: "/services/Bulk-Hiring-Services",
         icon: <Settings size={20} />,
         description:
-          "Autonomous workflows and AI-driven support systems for optimized fintech operations.",
+          "Large-scale recruitment, screening, onboarding, and structured workforce deployment to meet organizational expansion needs.",
       },
       {
-        name: "AI Strategy",
-        link: "/services/ai-strategy",
+        name: "Customer Support Outsourcing",
+        link: "/services/customer-support-outsourcing",
         icon: <BrainCircuit size={20} />,
         description:
-          "Implementing predictive AI tools to enhance data-driven business decision making.",
+          "Complete management of inbound and outbound customer communication processes, ensuring consistent service quality and operational efficiency.",
       },
       {
-        name: "Market Analysis",
-        link: "/services/market-analysis",
+        name: "Telecalling & Outreach Support",
+        link: "/services/Telecalling-and-Outreach-Support",
         icon: <BarChart3 size={20} />,
         description:
-          "In-depth market research and competitive analysis to guide your business growth.",
+          "Dedicated telecalling teams for structured customer interaction, follow-ups, and engagement campaigns.",
+      },
+      {
+        name: "Backend & Administrative Support",
+        link: "/services/Backend-and-Administrative-Support",
+        icon: <BarChart3 size={20} />,
+        description:
+          "Documentation handling, CRM updates, process coordination, and operational data management.",
+      },
+      {
+        name: "CRM Management & Reporting",
+        link: "/services/CRM-Management-and-Reporting",
+        icon: <BarChart3 size={20} />,
+        description:
+          "Customer data tracking, structured reporting systems, and performance monitoring for improved decision-making.",
       },
     ],
   },
-  {
-    mainServiceName: "Business Support",
-    image:
-      "https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=1000&auto=format&fit=crop",
-    title: "Seamless Operational & Customer Support",
-    description:
-      "Reliable backend and customer-centric support services ensuring smooth daily operations for your organization.",
-    ServicesName: [
-      {
-        name: "Bulk Hiring",
-        link: "/services/bulk-hiring",
-        icon: <Users size={20} />,
-        description:
-          "Specialized recruitment solutions for rapid team scaling and manpower management.",
-      },
-      {
-        name: "Customer Support",
-        link: "/services/customer-support",
-        icon: <Headset size={20} />,
-        description:
-          "24/7 omni-channel support ensuring high satisfaction and brand loyalty for your clients.",
-      },
-      {
-        name: "Backend Support",
-        link: "/services/backend-support",
-        icon: <ShieldCheck size={20} />,
-        description:
-          "Reliable backend management and data maintenance for secure business continuity.",
-      },
-    ],
-  },
+ 
 ];
 
 export const internships = [
@@ -640,3 +618,4 @@ export const jobPostData = [
     sector: "Business Support", // Linked to Bulk Hiring
   },
 ];
+
