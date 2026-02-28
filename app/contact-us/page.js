@@ -1,10 +1,14 @@
-import ContactUs from '@/page/ContactUs/ContactPage'
+
+import ContactBanner from '@/components/ContactUs/ContactUsBanner'
+import ContactUs01 from '@/page/ContactUs/ContactUS'
 import React from 'react'
 
 const page = () => {
   return (
     <div>
-        <ContactUs/>
+        <ContactBanner/>
+        <ContactUs01/>
+      
     </div>
   )
 }
