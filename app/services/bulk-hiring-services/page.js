@@ -1,9 +1,12 @@
-import React from 'react'
+import BulkHiringServicesPage from "@/page/Services/ServicesDetails/bulk-hiring-services/BulkHiringServicesPage";
+import React from "react";
 
 const page = () => {
   return (
-    <div>page</div>
-  )
-}
+    <div>
+      <BulkHiringServicesPage />
+    </div>
+  );
+};
 
-export default page
+export default page;
