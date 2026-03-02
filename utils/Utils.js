@@ -276,7 +276,7 @@ export const servicesData = [
         description:
           "Tailored EMI options to help you drive home your dream vehicle with ease.",
       },
-  
+
       {
         name: "Property Loan",
         link: "/services/property-loan",
@@ -296,7 +296,7 @@ export const servicesData = [
     ServicesName: [
       {
         name: "Bulk Hiring Services",
-        link: "/services/Bulk-Hiring-Services",
+        link: "/services/bulk-hiring-services",
         icon: <Settings size={20} />,
         description:
           "Large-scale recruitment, screening, onboarding, and structured workforce deployment to meet organizational expansion needs.",
@@ -331,7 +331,6 @@ export const servicesData = [
       },
     ],
   },
- 
 ];
 
 export const internships = [
@@ -618,4 +617,3 @@ export const jobPostData = [
     sector: "Business Support", // Linked to Bulk Hiring
   },
 ];
-
