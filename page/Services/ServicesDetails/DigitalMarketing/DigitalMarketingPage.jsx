@@ -1,10 +1,20 @@
 import React from "react";
 import DigitalMarketingBanner from "./DigitalMarketingBanner";
+import DigitalMarketingTimeLine from "./DigitalMarketingTimeLine";
+import { Divider } from "@mui/material";
+import DigitalMarketingDetails from "./DigitalMarketingDetails";
+import DigitalMarketingCTA from "./DigitalMarketingCTA";
 
 const DigitalMarketingPage = () => {
-  return <div className="bg-gradient-to-r from-orange-500/50 to-orange-700/60 p-4">
-    <DigitalMarketingBanner/>
-  </div>;
+  return (
+    <div className="">
+      <DigitalMarketingBanner />
+      <Divider />
+      {/* <DigitalMarketingTimeLine /> */}
+      <DigitalMarketingDetails/>
+      <DigitalMarketingCTA/>
+    </div>
+  );
 };
 
 export default DigitalMarketingPage;
