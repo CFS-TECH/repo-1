@@ -3,6 +3,7 @@
 import React from 'react'
 import AboutUsBanner from './AboutUsBanner';
 import ConsultingSection from './AboutUsSection';
+import Testimonial from './Testimonial';
 
 
 const AboutUsPage= () => {
@@ -10,7 +11,7 @@ const AboutUsPage= () => {
     <div>
       <AboutUsBanner/>
      <ConsultingSection/>
-     
+   <Testimonial/>
     </div>
   )
 }
