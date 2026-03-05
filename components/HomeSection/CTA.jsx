@@ -13,8 +13,8 @@ const CTA = ({
   subtitle = "We deliver scalable IT services, secure financial solutions, and reliable BPO support to help businesses grow faster.",
   primaryBtnText = "Get Free Consultation",
   secondaryBtnText = "Our Services",
-  onPrimaryClick,
-  onSecondaryClick,
+  onPrimaryClick="/",
+  onSecondaryClick="/",
 }) => {
   // Animation Variants
   const fadeInUp = {
