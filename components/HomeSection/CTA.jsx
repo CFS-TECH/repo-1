@@ -69,7 +69,7 @@ const CTA = ({
             {/* Action Buttons */}
             <div className="flex flex-col sm:flex-row items-center justify-center gap-5 w-full sm:w-auto">
               {/* Primary Button */}
-              <Link href={onPrimaryClick}>
+              <Link href={onPrimaryClick || '/'}>
                 <button className="w-full sm:w-auto flex items-center justify-center gap-2 cursor-pointer bg-[#fd741e] text-white px-8 py-4 rounded-full font-bold transition-all duration-300 shadow-[0_4px_14px_0_rgba(253,116,30,0.39)] hover:shadow-[0_6px_20px_rgba(253,116,30,0.23)] hover:-translate-y-1 hover:bg-orange-600 group/btn">
                   {primaryBtnText}
                   <MdKeyboardArrowRight className="text-2xl group-hover/btn:translate-x-1 transition-transform" />
@@ -77,7 +77,7 @@ const CTA = ({
               </Link>
 
               {/* Secondary Button */}
-              <Link href={onSecondaryClick}>
+              <Link href={onSecondaryClick || '/'}>
                 <button className="w-full sm:w-auto flex items-center justify-center gap-3 cursor-pointer bg-white/10 backdrop-blur-md border border-white/20 text-white hover:bg-white hover:text-[#094a84] px-8 py-4 rounded-full font-bold transition-all duration-500 hover:shadow-xl hover:-translate-y-1 group/btn2">
                   {secondaryBtnText}
                   <GoArrowUpRight className="text-xl group-hover/btn2:rotate-45 transition-transform duration-500" />
